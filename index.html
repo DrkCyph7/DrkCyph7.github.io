@@ -16,57 +16,90 @@
             color: white;
             text-align: center;
         }
-        .container {
+        .header {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .nav {
+            margin-top: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: #ff4b5c;
+        }
+        .hero {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 80vh;
         }
         .glass {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
+            padding: 40px;
+            border-radius: 15px;
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
         }
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
         }
         p {
             margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
         .btn {
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #ff4b5c;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             color: white;
+            font-size: 1.1em;
             transition: 0.3s;
         }
         .btn:hover {
             background: #e63946;
         }
         @media (max-width: 400px) {
-            h1 { font-size: 1.5em; }
-            p { font-size: 1em; }
+            h1 { font-size: 2em; }
+            p { font-size: 1.1em; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
+        <div class="logo">NexCy Technologies</div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
         <div class="glass">
-            <h1>Welcome to NexCy Technologies</h1>
-            <p>Innovating the Future with Technology</p>
-            <button class="btn" onclick="showAlert()">Learn More</button>
+            <h1>Innovating the Future</h1>
+            <p>We build cutting-edge solutions for app, web, and IoT development.</p>
+            <button class="btn" onclick="showAlert()">Get Started</button>
         </div>
     </div>
     <script>
         function showAlert() {
-            alert("NexCy Technologies is coming soon! Stay tuned.");
+            alert("NexCy Technologies is here to innovate!");
         }
     </script>
 </body>
