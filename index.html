@@ -1,1 +1,73 @@
-Hi. This is Nexcy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexCy Technologies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4b5c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e63946;
+        }
+        @media (max-width: 400px) {
+            h1 { font-size: 1.5em; }
+            p { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass">
+            <h1>Welcome to NexCy Technologies</h1>
+            <p>Innovating the Future with Technology</p>
+            <button class="btn" onclick="showAlert()">Learn More</button>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert("NexCy Technologies is coming soon! Stay tuned.");
+        }
+    </script>
+</body>
+</html>
